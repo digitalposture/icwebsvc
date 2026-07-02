@@ -1,0 +1,14 @@
+{
+  "name": "icwebsvc",
+  "version": "1.0.0",
+  "description": "A simple Node.js REST API service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
