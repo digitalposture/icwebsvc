@@ -1,5 +1,5 @@
-stock_name;stock_google_finance_ticker;stock_exchange;stock_isin;stock_industry;stock_sector
-Apple Inc;NASDAQ:AAPL;NASDAQ;US0378331005;Consumer Electronics;Technology
+stock_google_finance_ticker;stock_name;stock_exchange;stock_isin;stock_industry;stock_sector
+NASDAQ:AAPL;Apple Inc;NASDAQ;US0378331005;Consumer Electronics;Technology
 Amazon.com Inc;NASDAQ:AMZN;NASDAQ;US0231351067;E-Commerce and Cloud;Consumer Discretionary
 Alphabet Inc;NASDAQ:GOOGL;NASDAQ;US02079K3059;Internet and Media;Communication Services
 Space Exploration Technologies Corp;NASDAQ:SPCX;NASDAQ;US84615Q1031;Aerospace and Defense;Industrials
