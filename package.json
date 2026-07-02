@@ -6,9 +6,14 @@
   "scripts": {
     "start": "node app.js",
     "dev": "node app.js",
-    "test": "node --test"
+    "test": "node --test",
+    "worker:dev": "wrangler dev",
+    "worker:deploy": "wrangler deploy"
   },
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "wrangler": "^3.87.0"
   }
 }
