@@ -2,5 +2,9 @@ name = "icwebsvc"
 main = "src/worker.js"
 compatibility_date = "2024-09-23"
 
+[[r2_buckets]]
+binding = "RWS"
+bucket_name = "rws"
+
 [site]
 bucket = "./public"
