@@ -14,6 +14,6 @@
     "express": "^4.19.2"
   },
   "devDependencies": {
-    "wrangler": "^3.87.0"
+    "wrangler": "^4.107.0"
   }
 }

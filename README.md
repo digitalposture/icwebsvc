@@ -36,8 +36,20 @@ bucket_name = "rws"
 ```
 
 ### Deploy
+1. Create an API TOKEN
+**Dashboard → My Profile → API Tokens → Create Token → “Edit Cloudflare Workers”**
 
-Use wrangler to deploy the Worker:
+Give it permissions:
+- Workers Scripts: Edit
+- Workers KV: Edit (if needed)
+- R2: Edit (if needed)
+
+2. Use api token to authenticate locally before deploying:
+```bash
+export CLOUDFLARE_API_TOKEN=<your token>
+```
+
+3. Use wrangler to deploy the Worker:
 
 ```bash
 npm run worker:deploy
