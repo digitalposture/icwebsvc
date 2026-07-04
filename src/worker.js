@@ -11,7 +11,24 @@ function getPathSegments(url) {
 function jsonResponse(data, status = 200) {
   return new Response(JSON.stringify(data), {
     status,
-    headers: { 'content-type': 'application/json;charset=UTF-8' }
+    headers: {
+      'content-type': 'application/json;charset=UTF-8',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      'Access-Control-Allow-Headers': '*'
+    }
+  });
+}
+
+function corsPreflight() {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      'Access-Control-Allow-Headers': '*',
+      'Access-Control-Max-Age': '86400'
+    }
   });
 }
 
@@ -21,11 +38,13 @@ export default {
     const segments = getPathSegments(url);
     const R2_DATA_PREFIX = 'ws/';
 
-    async function getR2CsvContent(env, key) {
-      if (!env?.RWS) {
-        return '';
-      }
+    // Handle OPTIONS preflight
+    if (request.method === 'OPTIONS') {
+      return corsPreflight();
+    }
 
+    async function getR2CsvContent(env, key) {
+      if (!env?.RWS) return '';
       const object = await env.RWS.get(`${R2_DATA_PREFIX}${key}`);
       return object ? await object.text() : '';
     }
