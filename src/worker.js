@@ -69,7 +69,7 @@ export default {
     }
 
     if (!isAuthorized(request)) {
-      console.warn(`${new Date().toISOString()} ${request.method} ${url.pathname} missing_or_invalid_bearer, ${token}`);
+      console.warn(`${new Date().toISOString()} ${request.method} ${url.pathname} missing_or_invalid_bearer`);
       return jsonResponse({ error: 'Unauthorized' }, 401);
     }
 
