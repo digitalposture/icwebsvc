@@ -28,19 +28,21 @@ const CERTS_GROWTH_CSV_PATH = path.join(__dirname, 'data', 'certs_growth.csv');
 app.use(express.json());
 
 app.use((req, res, next) => {
-  if (!TEST_MODE) {
+  console.log('TEST MODE:', TEST_MODE);
+  if (TEST_MODE) {
     return next();
   }
 
   const authHeader = req.headers.authorization || '';
   const match = authHeader.match(/^Bearer\s+(.+)$/i);
   const token = match ? match[1].trim() : '';
+  console.log('TOKEN:', token, SECRET_KEYS.includes(token) ? 'VALID' : 'INVALID');
 
   if (SECRET_KEYS.includes(token)) {
     return next();
   }
 
-  const logEntry = `${new Date().toISOString()} ${req.method} ${req.originalUrl} missing_or_invalid_bearer\n`;
+  const logEntry = `${new Date().toISOString()} ${req.method} ${req.originalUrl} missing_or_invalid_bearer, ${token}\n`;
   fs.appendFileSync(AUTH_LOG_PATH, logEntry, 'utf8');
   return res.status(401).json({ error: 'Unauthorized' });
 });
@@ -113,5 +115,7 @@ app.get('/certs_growth', (req, res) => {
 });
 
 app.listen(PORT, () => {
+  console.log(`TEST MODE ${TEST_MODE ? 'ENABLED' : 'DISABLED'}`);
+  console.log(`SECRET KEYS ${SECRET_KEYS.length > 0 ? 'CONFIGURED' : 'NOT CONFIGURED'}`);
   console.log(`REST API listening on port ${PORT}`);
 });

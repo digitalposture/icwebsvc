@@ -38,6 +38,31 @@ export default {
     const segments = getPathSegments(url);
     const R2_DATA_PREFIX = 'ws/';
 
+    const SECRET_KEYS = (env.SECRET_KEYS || '')
+      .split(',')
+      .map((value) => value.trim())
+      .filter(Boolean);
+    const TEST_MODE = (env.TEST_MODE || '').toLowerCase() === 'true';
+
+    function isAuthorized(request) {
+      console.log(`TEST MODE ${TEST_MODE ? 'ENABLED' : 'DISABLED'}`);
+      console.log(`SECRET KEYS ${SECRET_KEYS.length > 0 ? 'CONFIGURED' : 'NOT CONFIGURED'}`);
+
+      if (TEST_MODE) {
+        return true;
+      }
+
+      const authHeader = request.headers.get('authorization') || '';
+      const match = authHeader.match(/^Bearer\s+(.+)$/i);
+      const token = match ? match[1].trim() : '';
+      return SECRET_KEYS.includes(token);
+    }
+
+    if (!isAuthorized(request)) {
+      console.warn(`${new Date().toISOString()} ${request.method} ${url.pathname} missing_or_invalid_bearer, ${token}`);
+      return jsonResponse({ error: 'Unauthorized' }, 401);
+    }
+
     // Handle OPTIONS preflight
     if (request.method === 'OPTIONS') {
       return corsPreflight();
