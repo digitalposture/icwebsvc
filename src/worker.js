@@ -4,6 +4,11 @@ const { buildTickersIndexResponse } = require('../lib/tickers_index');
 const { buildDetailsResponse } = require('../lib/details');
 const { buildCertsGrowthResponse } = require('../lib/certs_growth');
 
+import { env } from "cloudflare:workers";
+
+// Access environment variables at the top level
+const isTestMode = env.TEST_MODE === 'true';
+
 function getPathSegments(url) {
   return url.pathname.split('/').filter(Boolean);
 }
@@ -42,13 +47,12 @@ export default {
       .split(',')
       .map((value) => value.trim())
       .filter(Boolean);
-    const TEST_MODE = (env.TEST_MODE || '').toLowerCase() === 'true';
 
     function isAuthorized(request) {
-      console.log(`TEST MODE ${TEST_MODE ? 'ENABLED' : 'DISABLED'}`);
+      console.log(`TEST MODE ${isTestMode ? 'ENABLED' : 'DISABLED'}`);
       console.log(`SECRET KEYS ${SECRET_KEYS.length > 0 ? 'CONFIGURED' : 'NOT CONFIGURED'}`);
 
-      if (TEST_MODE) {
+      if (isTestMode) {
         return true;
       }
 
