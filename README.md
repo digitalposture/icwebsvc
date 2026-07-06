@@ -55,7 +55,11 @@ export CLOUDFLARE_API_TOKEN=<your token>
 npm run worker:deploy
 ```
 
-Use `npm run worker:dev` to test locally with Wrangler.
+Use `npm run worker:dev` to test locally with Wrangler. 
+Use `.env` to configure env vars locally during tests. Eg:
+```.env
+TEST_MODE=true
+```
 
 ## Notes
 

@@ -8,6 +8,13 @@ import { env } from "cloudflare:workers";
 
 // Access environment variables at the top level
 const isTestMode = env.TEST_MODE === 'true';
+const SECRET_KEYS = (env.SECRET_KEYS || '')
+  .split(',')
+  .map((value) => value.trim())
+  .filter(Boolean);
+
+console.log(`TEST MODE ${isTestMode ? 'ENABLED' : 'DISABLED'}`);
+console.log(`SECRET KEYS ${SECRET_KEYS.length > 0 ? 'CONFIGURED' : 'NOT CONFIGURED'}`);
 
 function getPathSegments(url) {
   return url.pathname.split('/').filter(Boolean);
@@ -49,15 +56,7 @@ export default {
 
     const R2_DATA_PREFIX = 'ws/';
 
-    const SECRET_KEYS = (env.SECRET_KEYS || '')
-      .split(',')
-      .map((value) => value.trim())
-      .filter(Boolean);
-
     function isAuthorized(request) {
-      console.log(`TEST MODE ${isTestMode ? 'ENABLED' : 'DISABLED'}`);
-      console.log(`SECRET KEYS ${SECRET_KEYS.length > 0 ? 'CONFIGURED' : 'NOT CONFIGURED'}`);
-
       if (isTestMode) {
         return true;
       }
