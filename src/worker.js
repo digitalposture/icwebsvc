@@ -41,6 +41,12 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const segments = getPathSegments(url);
+
+    // Handle OPTIONS preflight
+    if (request.method === 'OPTIONS') {
+      return corsPreflight();
+    }
+
     const R2_DATA_PREFIX = 'ws/';
 
     const SECRET_KEYS = (env.SECRET_KEYS || '')
@@ -65,11 +71,6 @@ export default {
     if (!isAuthorized(request)) {
       console.warn(`${new Date().toISOString()} ${request.method} ${url.pathname} missing_or_invalid_bearer, ${token}`);
       return jsonResponse({ error: 'Unauthorized' }, 401);
-    }
-
-    // Handle OPTIONS preflight
-    if (request.method === 'OPTIONS') {
-      return corsPreflight();
     }
 
     async function getR2CsvContent(env, key) {
