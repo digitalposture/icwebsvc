@@ -80,22 +80,17 @@ export default {
     }
 
     async function getFolders(env) {
-      if (!env?.RWS) return '';
-      const list = await env.RWS.list({ prefix: `${R2_DATA_PREFIX}sunburst/` });
+      if (!env?.RWS) return [];
+      const list = await env.RWS.list({
+        prefix: `${R2_DATA_PREFIX}sunburst/`,
+        delimiter: '/'
+      });
 
-      // Extract folder names: "sunburst/2026-07-19T15-00-46/"
-      const folders = new Set();
-      for (const obj of list.objects) {
-        const key = obj.key;
-        const parts = key.split('/');
-        if (parts.length >= 2) {
-          const folder = parts[parts.length-1] === '' ? parts[parts.length-2] : parts[parts.length-1];
-          if (folder) folders.add(folder);
-        }
-      }
-
-      const sorted = [...folders].sort(); // ISO timestamps sort lexicographically
-      return sorted;
+      return (list.delimitedPrefixes || [])
+        .map((entry) => entry.prefix)
+        .map((prefix) => prefix.replace(`${R2_DATA_PREFIX}sunburst/`, '').replace(/\/$/, ''))
+        .filter(Boolean)
+        .sort();
     }
 
     if (url.pathname === '/health') {
