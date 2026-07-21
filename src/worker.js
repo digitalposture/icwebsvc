@@ -81,17 +81,25 @@ export default {
 
     async function getFolders(env) {
       if (!env?.RWS) return [];
+
+      const prefix = `${R2_DATA_PREFIX}sunburst/`;
+
       const list = await env.RWS.list({
-        prefix: `${R2_DATA_PREFIX}sunburst/`,
-        delimiter: '/'
+        prefix,
+        delimiter: '/',   // <-- this prevents recursion
       });
 
-      return (list.delimitedPrefixes || [])
-        .map((entry) => entry.prefix)
-        .map((prefix) => prefix.replace(`${R2_DATA_PREFIX}sunburst/`, '').replace(/\/$/, ''))
-        .filter(Boolean)
-        .sort();
+      // delimitedPrefixes contains folder names like:
+      // "sunburst/2026-07-19T15-00-46/"
+      console.log('R2 list delimitedPrefixes:', list.delimitedPrefixes);
+      const folders = list.delimitedPrefixes.map(p => {
+        const parts = p.split('/');
+        return parts[1];  // "2026-07-19T15-00-46"
+      });
+
+      return folders.sort(); // ISO timestamps sort correctly
     }
+
 
     if (url.pathname === '/health') {
       return jsonResponse({ status: 'ok', service: 'icwebsvc' });
