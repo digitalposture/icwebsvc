@@ -120,25 +120,23 @@ app.get('/certs_growth', (req, res) => {
 app.get(['/sunburst', '/sunburst/latest/:exchange', '/sunburst/:datetime/:exchange'], (req, res) => {
   const requestedDatetime = req.params.datetime || '';
   const exchange = req.params.exchange || '';
+  const isLatest =  req.path.startsWith('/sunburst/latest');
+  // console.log('Requested sunburst datetime:', requestedDatetime, 'exchange:', exchange, 'isLatest:', isLatest);
   const sunburstEntries = fs.existsSync(SUNBURST_ROOT_PATH)
-    ? fs.readdirSync(SUNBURST_ROOT_PATH, { withFileTypes: true })
-        .filter((entry) => entry.isDirectory())
-        .map((entry) => entry.name)
-        .sort()
-        .map((entryDatetime) => {
-          const fileName = exchange === '*' || exchange === ''
-            ? 'ALL.csv'
-            : `${exchange}.csv`;
-          return {
-            datetime: entryDatetime,
-            csvContent: loadCsvContent(path.join(SUNBURST_ROOT_PATH, entryDatetime, fileName))
-          };
-        })
-    : [];
-  const datetime = requestedDatetime === 'latest' || requestedDatetime === '' && req.path.startsWith('/sunburst/latest')
-    ? (sunburstEntries[sunburstEntries.length - 1]?.datetime || '')
-    : requestedDatetime;
-  const rows = buildSunburstResponse(sunburstEntries, datetime, {
+      ? fs.readdirSync(SUNBURST_ROOT_PATH, { withFileTypes: true })
+          .filter((entry) => entry.isDirectory())
+          .map((entry) => entry.name)
+          .sort()
+      : [];
+  if ( (requestedDatetime === '' && !isLatest) || sunburstEntries.length === 0 ) return res.json(sunburstEntries);
+  const datetime = isLatest? sunburstEntries[sunburstEntries.length - 1] : requestedDatetime;
+  
+  if (!sunburstEntries.includes(datetime)) return res.json([]);
+
+  const fileName = exchange === '*' || exchange === ''
+    ? 'ALL.csv'
+    : `${exchange}.csv`;
+  const rows = buildSunburstResponse(path.join(SUNBURST_ROOT_PATH, datetime, fileName), {
     stock_list: req.query.stock_list || req.query.stockList || ''
   });
   res.json(rows);

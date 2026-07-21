@@ -79,6 +79,25 @@ export default {
       return object ? await object.text() : '';
     }
 
+    async function getFolders(env) {
+      if (!env?.RWS) return '';
+      const list = await env.RWS.list({ prefix: `${R2_DATA_PREFIX}sunburst/` });
+
+      // Extract folder names: "sunburst/2026-07-19T15-00-46/"
+      const folders = new Set();
+      for (const obj of list.objects) {
+        const key = obj.key;
+        const parts = key.split('/');
+        if (parts.length >= 2) {
+          const folder = parts[parts.length-1] === '' ? parts[parts.length-2] : parts[parts.length-1];
+          if (folder) folders.add(folder);
+        }
+      }
+
+      const sorted = [...folders].sort(); // ISO timestamps sort lexicographically
+      return sorted;
+    }
+
     if (url.pathname === '/health') {
       return jsonResponse({ status: 'ok', service: 'icwebsvc' });
     }
@@ -130,17 +149,18 @@ export default {
     if (segments[0] === 'sunburst') {
       const requestedDatetime = segments[1] || '';
       const exchange = segments[2] || '';
-      const fileName = exchange === '*' || exchange === '' ? 'ALL.csv' : `${exchange}.csv`;
+      const sunburstEntries = await getFolders(env);
+      console.log('Requested sunburst datetime:', requestedDatetime, 'exchange:', exchange, 'available datetimes:', sunburstEntries);
+      if (requestedDatetime === '' || sunburstEntries.length === 0) {
+        return jsonResponse(sunburstEntries);
+      }
       const datetime = requestedDatetime === 'latest'
-        ? ''
+        ? sunburstEntries[sunburstEntries.length - 1]
         : requestedDatetime;
+      if (!sunburstEntries.includes(datetime)) return jsonResponse([]);
+      const fileName = exchange === '*' || exchange === '' ? 'ALL.csv' : `${exchange}.csv`;
       const csvContent = await getR2CsvContent(env, `sunburst/${datetime}/${fileName}`);
-      const rows = buildSunburstResponse([
-        {
-          datetime: requestedDatetime === 'latest' ? '' : requestedDatetime,
-          csvContent
-        }
-      ], datetime === '' ? 'latest' : datetime, {
+      const rows = buildSunburstResponse(csvContent, {
         stock_list: url.searchParams.get('stock_list') || url.searchParams.get('stockList') || ''
       });
       return jsonResponse(rows);
