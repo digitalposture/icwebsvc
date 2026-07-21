@@ -94,7 +94,7 @@ export default {
       console.log('R2 list delimitedPrefixes:', list.delimitedPrefixes);
       const folders = list.delimitedPrefixes.map(p => {
         const parts = p.split('/');
-        return parts[1];  // "2026-07-19T15-00-46"
+        return parts[2];  // "2026-07-19T15-00-46"
       });
 
       return folders.sort(); // ISO timestamps sort correctly
