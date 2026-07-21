@@ -1,0 +1,249 @@
+ids;labels;parents;values;counts;avgs
+MOT;MOT;;0;1;0
+AMSTERDAM;AMSTERDAM;;-2.09;1;-2.00
+LSE;LSE;;2;1;2
+XETRA;XETRA;;-8.57;8;-1.07
+BME;BME;;-0.16;5;-0.03
+VIENNA;VIENNA;;0;1;0
+NASDAQ;NASDAQ;;-28.06;25;-1.12
+OSLO;OSLO;;4.88;1;4.88
+BIT;BIT;;-16.29;23;-0.71
+SIX;SIX;;-1.14;2;-0.57
+NYSE;NYSE;;0.64;24;0.03
+EPA;EPA;;-2.59;2;-1.3
+Space and Satellite Technology|NASDAQ;Space and Satellite Technology;NASDAQ;0.6;1;0.6
+Space and Satellite Technology|NYSE;Space and Satellite Technology;NYSE;1.72;1;1.72
+Banking|BIT;Banking;BIT;-7.93;5;-1.59
+Social Media|NASDAQ;Social Media;NASDAQ;-2.79;1;-2.79
+Telecommunications|NASDAQ;Telecommunications;NASDAQ;5.07;2;2.54
+Aerospace and Defense|NYSE;Aerospace and Defense;NYSE;-0.14;1;-0.14
+Oil and Gas Integrated|EPA;Oil and Gas Integrated;EPA;1.32;1;1.32
+Banks|BME;Banks;BME;-1.07;1;-1.07
+Postal Services and Financials|BIT;Postal Services and Financials;BIT;0.47;1;0.47
+Semiconductor Equipment|AMSTERDAM;Semiconductor Equipment;AMSTERDAM;-2.09;1;-2.09
+Apparel Manufacturing|BIT;Apparel Manufacturing;BIT;-2.76;1;-2.76
+Insurance|BIT;Insurance;BIT;0.38;1;0.38
+Electric Utilities|BIT;Electric Utilities;BIT;3.07;2;1.54
+Household and Personal Products|NYSE;Household and Personal Products;NYSE;-1.16;1;-1.16
+Semiconductors|EPA;Semiconductors;EPA;-3.91;1;-3.91
+Banking|XETRA;Banking;XETRA;-3.68;2;-1.84
+Travel and Leisure|NYSE;Travel and Leisure;NYSE;-2.38;1;-2.38
+Beverages|BIT;Beverages;BIT;0.64;1;0.64
+Exchange Traded Funds|NYSE;Exchange Traded Funds;NYSE;1.72;2;0.86
+Software-Infrastructure|NASDAQ;Software-Infrastructure;NASDAQ;-1.53;1;-1.53
+Gas Utilities|BIT;Gas Utilities;BIT;1.7;1;1.7
+Insurance|SIX;Insurance;SIX;0;1;0
+Gold Mining|NYSE;Gold Mining;NYSE;0.54;1;0.54
+ETF|NASDAQ;ETF;NASDAQ;-2.2;1;-2.2
+Apparel Accessories and Luxury Goods|SIX;Apparel Accessories and Luxury Goods;SIX;-1.14;1;-1.14
+Renewable Energy|BIT;Renewable Energy;BIT;0.71;1;0.71
+Oil and Gas|BME;Oil and Gas;BME;1.45;1;1.45
+Oil and Gas|OSLO;Oil and Gas;OSLO;4.88;1;4.88
+Shipbuilding|BIT;Shipbuilding;BIT;0.08;1;0.08
+Energy Equipment and Services|XETRA;Energy Equipment and Services;XETRA;-0.73;1;-0.73
+Aerospace and Defense|XETRA;Aerospace and Defense;XETRA;2.11;1;2.11
+Quantum Computing|NYSE;Quantum Computing;NYSE;-2.03;2;-1.01
+Semiconductors|NASDAQ;Semiconductors;NASDAQ;-13.72;8;-1.72
+Insurance|XETRA;Insurance;XETRA;-3.78;1;-3.78
+Software|NASDAQ;Software;NASDAQ;-1.3;2;-0.65
+Electric Utilities|XETRA;Electric Utilities;XETRA;1.8;1;1.8
+Auto Manufacturers|BIT;Auto Manufacturers;BIT;-4.68;2;-2.34
+ETF|NYSE;ETF;NYSE;-0.5;1;-0.5
+Asset Management|BIT;Asset Management;BIT;-2.29;1;-2.29
+Semiconductors|XETRA;Semiconductors;XETRA;-1.62;1;-1.62
+Aerospace and Defense|NASDAQ;Aerospace and Defense;NASDAQ;-5.03;2;-2.52
+Banking|BME;Banking;BME;-2.35;1;-2.35
+Banks|VIENNA;Banks;VIENNA;0;1;0
+Consumer Electronics|NASDAQ;Consumer Electronics;NASDAQ;0.14;1;0.14
+Oil and Gas|LSE;Oil and Gas;LSE;2;1;2
+Semiconductors|BIT;Semiconductors;BIT;-4;1;-4
+Computer Hardware|NYSE;Computer Hardware;NYSE;1.27;1;1.27
+Oil and Gas|BIT;Oil and Gas;BIT;2.53;1;2.53
+Internet Content and Information|NASDAQ;Internet Content and Information;NASDAQ;-2.17;1;-2.17
+Computer Hardware|NASDAQ;Computer Hardware;NASDAQ;-2.03;1;-2.03
+Sovereign Debt|MOT;Sovereign Debt;MOT;0;1;0
+Electronic Equipment Instruments and Components|NYSE;Electronic Equipment Instruments and Components;NYSE;0.23;1;0.23
+Banking|NYSE;Banking;NYSE;-0.6;1;-0.6
+Banks|XETRA;Banks;XETRA;-2.67;1;-2.67
+ETF-Emerging Markets Equity|NYSE;ETF-Emerging Markets Equity;NYSE;-0.28;1;-0.28
+Pharmaceuticals|NYSE;Pharmaceuticals;NYSE;0.39;3;0.13
+Investment Banking|NYSE;Investment Banking;NYSE;-4.07;2;-2.04
+Financial Services|BIT;Financial Services;BIT;-2.55;1;-2.55
+Oil and Gas Exploration and Production|NYSE;Oil and Gas Exploration and Production;NYSE;2.26;1;2.26
+Electric Utilities|BME;Electric Utilities;BME;1.85;1;1.85
+Oil and Gas Integrated|NYSE;Oil and Gas Integrated;NYSE;1.91;1;1.91
+Aerospace and Defense|BIT;Aerospace and Defense;BIT;2.3;1;2.3
+Diversified Financial Services|BIT;Diversified Financial Services;BIT;-1.89;1;-1.89
+Multi-line Insurance|BIT;Multi-line Insurance;BIT;-2.07;1;-2.07
+Biotechnology|NASDAQ;Biotechnology;NASDAQ;-2.11;1;-2.11
+Banks-Diversified|BME;Banks-Diversified;BME;-0.04;1;-0.04
+Software|NYSE;Software;NYSE;1.76;3;0.59
+E-commerce|NASDAQ;E-commerce;NASDAQ;-1.06;2;-0.53
+Quantum Computing|NASDAQ;Quantum Computing;NASDAQ;0.07;1;0.07
+Technology|Software|NYSE;Technology;Software|NYSE;2.77;2;1.39
+Financial Services|Exchange Traded Funds|NYSE;Financial Services;Exchange Traded Funds|NYSE;1.72;2;0.86
+Financials|Banks|XETRA;Financials;Banks|XETRA;-2.67;1;-2.67
+Financials|ETF-Emerging Markets Equity|NYSE;Financials;ETF-Emerging Markets Equity|NYSE;-0.28;1;-0.28
+Energy|Oil and Gas Integrated|NYSE;Energy;Oil and Gas Integrated|NYSE;1.91;1;1.91
+Utilities|Electric Utilities|XETRA;Utilities;Electric Utilities|XETRA;1.8;1;1.8
+Financials|Banking|XETRA;Financials;Banking|XETRA;-3.1;1;-3.1
+Energy|Oil and Gas|BME;Energy;Oil and Gas|BME;1.45;1;1.45
+Technology|Semiconductors|NASDAQ;Technology;Semiconductors|NASDAQ;-13.72;7;-1.96
+Consumer Discretionary|Apparel Accessories and Luxury Goods|SIX;Consumer Discretionary;Apparel Accessories and Luxury Goods|SIX;-1.14;1;-1.14
+Technology|Semiconductors|XETRA;Technology;Semiconductors|XETRA;-1.62;1;-1.62
+Communication Services|Telecommunications|NASDAQ;Communication Services;Telecommunications|NASDAQ;5.07;2;2.54
+Financials|Banking|BME;Financials;Banking|BME;-2.35;1;-2.35
+Utilities|Electric Utilities|BME;Utilities;Electric Utilities|BME;1.85;1;1.85
+Financials|Diversified Financial Services|BIT;Financials;Diversified Financial Services|BIT;-1.89;1;-1.89
+Financials|Investment Banking|NYSE;Financials;Investment Banking|NYSE;-4.07;2;-2.04
+Communication Services|Internet Content and Information|NASDAQ;Communication Services;Internet Content and Information|NASDAQ;-2.17;1;-2.17
+Financials|Insurance|BIT;Financials;Insurance|BIT;0.38;1;0.38
+Information Technology|Software|NASDAQ;Information Technology;Software|NASDAQ;0.52;1;0.52
+Consumer Discretionary|E-commerce|NASDAQ;Consumer Discretionary;E-commerce|NASDAQ;-1.06;2;-0.53
+Financials|Banks|BME;Financials;Banks|BME;-1.07;1;-1.07
+Consumer Cyclical|Auto Manufacturers|BIT;Consumer Cyclical;Auto Manufacturers|BIT;-4.68;2;-2.34
+Industrials|Aerospace and Defense|NYSE;Industrials;Aerospace and Defense|NYSE;-0.14;1;-0.14
+Financial|ETF|NASDAQ;Financial;ETF|NASDAQ;-2.2;1;-2.2
+Utilities|Renewable Energy|BIT;Utilities;Renewable Energy|BIT;0.71;1;0.71
+Energy|Oil and Gas|BIT;Energy;Oil and Gas|BIT;2.53;1;2.53
+Technology|Consumer Electronics|NASDAQ;Technology;Consumer Electronics|NASDAQ;0.14;1;0.14
+Technology|Quantum Computing|NYSE;Technology;Quantum Computing|NYSE;-2.03;2;-1.01
+Technology|Space and Satellite Technology|NYSE;Technology;Space and Satellite Technology|NYSE;1.72;1;1.72
+Technology|Semiconductors|EPA;Technology;Semiconductors|EPA;-3.91;1;-3.91
+Energy|Oil and Gas Integrated|EPA;Energy;Oil and Gas Integrated|EPA;1.32;1;1.32
+Healthcare|Pharmaceuticals|NYSE;Healthcare;Pharmaceuticals|NYSE;0.39;3;0.13
+Basic Materials|Gold Mining|NYSE;Basic Materials;Gold Mining|NYSE;0.54;1;0.54
+Industrials|Energy Equipment and Services|XETRA;Industrials;Energy Equipment and Services|XETRA;-0.73;1;-0.73
+Industrials|Aerospace and Defense|BIT;Industrials;Aerospace and Defense|BIT;2.3;1;2.3
+Financial|ETF|NYSE;Financial;ETF|NYSE;-0.5;1;-0.5
+Industrials|Aerospace and Defense|NASDAQ;Industrials;Aerospace and Defense|NASDAQ;-5.03;2;-2.52
+Financial Services|Banks-Diversified|BME;Financial Services;Banks-Diversified|BME;-0.04;1;-0.04
+Energy|Oil and Gas Exploration and Production|NYSE;Energy;Oil and Gas Exploration and Production|NYSE;2.26;1;2.26
+Technology|Computer Hardware|NASDAQ;Technology;Computer Hardware|NASDAQ;-2.03;1;-2.03
+Consumer Cyclical|Travel and Leisure|NYSE;Consumer Cyclical;Travel and Leisure|NYSE;-2.38;1;-2.38
+Utilities|Electric Utilities|BIT;Utilities;Electric Utilities|BIT;3.07;2;1.54
+Energy|Oil and Gas|OSLO;Energy;Oil and Gas|OSLO;4.88;1;4.88
+Financials|Financial Services|BIT;Financials;Financial Services|BIT;-2.55;1;-2.55
+Energy|Oil and Gas|LSE;Energy;Oil and Gas|LSE;2;1;2
+Financials|Multi-line Insurance|BIT;Financials;Multi-line Insurance|BIT;-2.07;1;-2.07
+Technology|Software|NASDAQ;Technology;Software|NASDAQ;-1.82;1;-1.82
+Technology|Semiconductors|BIT;Technology;Semiconductors|BIT;-4;1;-4
+Financial Services|Insurance|XETRA;Financial Services;Insurance|XETRA;-3.78;1;-3.78
+Consumer Defensive|Household and Personal Products|NYSE;Consumer Defensive;Household and Personal Products|NYSE;-1.16;1;-1.16
+Financials|Banking|BIT;Financials;Banking|BIT;-7.93;5;-1.59
+Energy|Gas Utilities|BIT;Energy;Gas Utilities|BIT;1.7;1;1.7
+Financials|Asset Management|BIT;Financials;Asset Management|BIT;-2.29;1;-2.29
+Financials|Postal Services and Financials|BIT;Financials;Postal Services and Financials|BIT;0.47;1;0.47
+Financial Services|Insurance|SIX;Financial Services;Insurance|SIX;0;1;0
+Financials|Banking|NYSE;Financials;Banking|NYSE;-0.6;1;-0.6
+Industrials|Space and Satellite Technology|NASDAQ;Industrials;Space and Satellite Technology|NASDAQ;0.6;1;0.6
+Technology|Semiconductor Equipment|AMSTERDAM;Technology;Semiconductor Equipment|AMSTERDAM;-2.09;1;-2.09
+Technology|Computer Hardware|NYSE;Technology;Computer Hardware|NYSE;1.27;1;1.27
+Communication Services|Social Media|NASDAQ;Communication Services;Social Media|NASDAQ;-2.79;1;-2.79
+Industrials|Shipbuilding|BIT;Industrials;Shipbuilding|BIT;0.08;1;0.08
+Information Technology|Electronic Equipment Instruments and Components|NYSE;Information Technology;Electronic Equipment Instruments and Components|NYSE;0.23;1;0.23
+Financials|Banks|VIENNA;Financials;Banks|VIENNA;0;1;0
+Industrials|Aerospace and Defense|XETRA;Industrials;Aerospace and Defense|XETRA;2.11;1;2.11
+Consumer Goods|Beverages|BIT;Consumer Goods;Beverages|BIT;0.64;1;0.64
+Technology|Software-Infrastructure|NASDAQ;Technology;Software-Infrastructure|NASDAQ;-1.53;1;-1.53
+Information Technology|Semiconductors|NASDAQ;Information Technology;Semiconductors|NASDAQ;0;1;0
+Consumer Cyclical|Apparel Manufacturing|BIT;Consumer Cyclical;Apparel Manufacturing|BIT;-2.76;1;-2.76
+Information Technology|Software|NYSE;Information Technology;Software|NYSE;-1.01;1;-1.01
+Financial|Banking|XETRA;Financial;Banking|XETRA;-0.58;1;-0.58
+Technology|Quantum Computing|NASDAQ;Technology;Quantum Computing|NASDAQ;0.07;1;0.07
+Healthcare|Biotechnology|NASDAQ;Healthcare;Biotechnology|NASDAQ;-2.11;1;-2.11
+Government|Sovereign Debt|MOT;Government;Sovereign Debt|MOT;0;1;0
+DBK.DE|Financials|Banks|XETRA;DBK.DE;Financials|Banks|XETRA;-2.67;1;-2.67
+MONC.MI|Consumer Cyclical|Apparel Manufacturing|BIT;MONC.MI;Consumer Cyclical|Apparel Manufacturing|BIT;-2.76;1;-2.76
+STMMI.MI|Technology|Semiconductors|BIT;STMMI.MI;Technology|Semiconductors|BIT;-4;1;-4
+UNI.MI|Financials|Multi-line Insurance|BIT;UNI.MI;Financials|Multi-line Insurance|BIT;-2.07;1;-2.07
+PLTR|Technology|Software-Infrastructure|NASDAQ;PLTR;Technology|Software-Infrastructure|NASDAQ;-1.53;1;-1.53
+AMD|Technology|Semiconductors|NASDAQ;AMD;Technology|Semiconductors|NASDAQ;-1.03;1;-1.03
+CPR.MI|Consumer Goods|Beverages|BIT;CPR.MI;Consumer Goods|Beverages|BIT;0.64;1;0.64
+BP|Energy|Oil and Gas|LSE;BP;Energy|Oil and Gas|LSE;2;1;2
+BGN.MI|Financials|Banking|BIT;BGN.MI;Financials|Banking|BIT;-1.99;1;-1.99
+AI|Information Technology|Software|NYSE;AI;Information Technology|Software|NYSE;-1.01;1;-1.01
+EOAN.DE|Utilities|Electric Utilities|XETRA;EOAN.DE;Utilities|Electric Utilities|XETRA;1.8;1;1.8
+LLY|Healthcare|Pharmaceuticals|NYSE;LLY;Healthcare|Pharmaceuticals|NYSE;0.85;1;0.85
+GOOGL|Communication Services|Internet Content and Information|NASDAQ;GOOGL;Communication Services|Internet Content and Information|NASDAQ;-2.17;1;-2.17
+META|Communication Services|Social Media|NASDAQ;META;Communication Services|Social Media|NASDAQ;-2.79;1;-2.79
+ERG.MI|Utilities|Renewable Energy|BIT;ERG.MI;Utilities|Renewable Energy|BIT;0.71;1;0.71
+SRG.MI|Energy|Gas Utilities|BIT;SRG.MI;Energy|Gas Utilities|BIT;1.7;1;1.7
+GLD|Financial Services|Exchange Traded Funds|NYSE;GLD;Financial Services|Exchange Traded Funds|NYSE;0.95;1;0.95
+TTE.PA|Energy|Oil and Gas Integrated|EPA;TTE.PA;Energy|Oil and Gas Integrated|EPA;1.32;1;1.32
+AAPL|Technology|Consumer Electronics|NASDAQ;AAPL;Technology|Consumer Electronics|NASDAQ;0.14;1;0.14
+RGTI|Technology|Quantum Computing|NASDAQ;RGTI;Technology|Quantum Computing|NASDAQ;0.07;1;0.07
+EQNR|Energy|Oil and Gas|OSLO;EQNR;Energy|Oil and Gas|OSLO;4.88;1;4.88
+NASDAQ|Information Technology|Semiconductors|NASDAQ;NASDAQ;Information Technology|Semiconductors|NASDAQ;0;1;0
+AVGO|Technology|Semiconductors|NASDAQ;AVGO;Technology|Semiconductors|NASDAQ;-0.97;1;-0.97
+CBK|Financial|Banking|XETRA;CBK;Financial|Banking|XETRA;-0.58;1;-0.58
+MOT|Government|Sovereign Debt|MOT;MOT;Government|Sovereign Debt|MOT;0;1;0
+BPE.MI|Financials|Banking|BIT;BPE.MI;Financials|Banking|BIT;-0.68;1;-0.68
+EWZ|Financials|ETF-Emerging Markets Equity|NYSE;EWZ;Financials|ETF-Emerging Markets Equity|NYSE;-0.28;1;-0.28
+SNDK|Technology|Semiconductors|NASDAQ;SNDK;Technology|Semiconductors|NASDAQ;-3.99;1;-3.99
+FTNT|Information Technology|Software|NASDAQ;FTNT;Information Technology|Software|NASDAQ;0.52;1;0.52
+PL|Technology|Space and Satellite Technology|NYSE;PL;Technology|Space and Satellite Technology|NYSE;1.72;1;1.72
+OXY|Energy|Oil and Gas Exploration and Production|NYSE;OXY;Energy|Oil and Gas Exploration and Production|NYSE;2.26;1;2.26
+SATS|Communication Services|Telecommunications|NASDAQ;SATS;Communication Services|Telecommunications|NASDAQ;0;1;0
+ASML|Technology|Semiconductor Equipment|AMSTERDAM;ASML;Technology|Semiconductor Equipment|AMSTERDAM;-2.09;1;-2.09
+CL|Consumer Defensive|Household and Personal Products|NYSE;CL;Consumer Defensive|Household and Personal Products|NYSE;-1.16;1;-1.16
+NVDA|Technology|Semiconductors|NASDAQ;NVDA;Technology|Semiconductors|NASDAQ;-2.21;1;-2.21
+GS|Financials|Investment Banking|NYSE;GS;Financials|Investment Banking|NYSE;-2.76;1;-2.76
+CABK.MC|Financial Services|Banks-Diversified|BME;CABK.MC;Financial Services|Banks-Diversified|BME;-0.04;1;-0.04
+COHR|Information Technology|Electronic Equipment Instruments and Components|NYSE;COHR;Information Technology|Electronic Equipment Instruments and Components|NYSE;0.23;1;0.23
+DELL|Technology|Computer Hardware|NYSE;DELL;Technology|Computer Hardware|NYSE;1.27;1;1.27
+STMPA.PA|Technology|Semiconductors|EPA;STMPA.PA;Technology|Semiconductors|EPA;-3.91;1;-3.91
+CFR|Consumer Discretionary|Apparel Accessories and Luxury Goods|SIX;CFR;Consumer Discretionary|Apparel Accessories and Luxury Goods|SIX;-1.14;1;-1.14
+ALV|Financial Services|Insurance|XETRA;ALV;Financial Services|Insurance|XETRA;-3.78;1;-3.78
+CVX|Energy|Oil and Gas Integrated|NYSE;CVX;Energy|Oil and Gas Integrated|NYSE;1.91;1;1.91
+PFE|Healthcare|Pharmaceuticals|NYSE;PFE;Healthcare|Pharmaceuticals|NYSE;-0.36;1;-0.36
+BA|Industrials|Aerospace and Defense|NYSE;BA;Industrials|Aerospace and Defense|NYSE;-0.14;1;-0.14
+SAN.MC|Financials|Banks|BME;SAN.MC;Financials|Banks|BME;-1.07;1;-1.07
+SLV|Financial Services|Exchange Traded Funds|NYSE;SLV;Financial Services|Exchange Traded Funds|NYSE;0.77;1;0.77
+KLAC|Technology|Semiconductors|NASDAQ;KLAC;Technology|Semiconductors|NASDAQ;-3.02;1;-3.02
+ASTS|Communication Services|Telecommunications|NASDAQ;ASTS;Communication Services|Telecommunications|NASDAQ;5.07;1;5.07
+BBVA.MC|Financials|Banking|BME;BBVA.MC;Financials|Banking|BME;-2.35;1;-2.35
+NASDAQ|Consumer Discretionary|E-commerce|NASDAQ;NASDAQ;Consumer Discretionary|E-commerce|NASDAQ;0;1;0
+AU|Basic Materials|Gold Mining|NYSE;AU;Basic Materials|Gold Mining|NYSE;0.54;1;0.54
+MRK|Healthcare|Pharmaceuticals|NYSE;MRK;Healthcare|Pharmaceuticals|NYSE;-0.1;1;-0.1
+ORCL|Technology|Software|NYSE;ORCL;Technology|Software|NYSE;1.77;1;1.77
+FBK.MI|Financials|Diversified Financial Services|BIT;FBK.MI;Financials|Diversified Financial Services|BIT;-1.89;1;-1.89
+REP.MC|Energy|Oil and Gas|BME;REP.MC;Energy|Oil and Gas|BME;1.45;1;1.45
+UCG.MI|Financials|Banking|BIT;UCG.MI;Financials|Banking|BIT;-2.48;1;-2.48
+JPM|Financials|Banking|NYSE;JPM;Financials|Banking|NYSE;-0.6;1;-0.6
+ENEL.MI|Utilities|Electric Utilities|BIT;ENEL.MI;Utilities|Electric Utilities|BIT;1.64;1;1.64
+MU|Technology|Semiconductors|NASDAQ;MU;Technology|Semiconductors|NASDAQ;-0.5;1;-0.5
+RCL|Consumer Cyclical|Travel and Leisure|NYSE;RCL;Consumer Cyclical|Travel and Leisure|NYSE;-2.38;1;-2.38
+EWY|Financial|ETF|NYSE;EWY;Financial|ETF|NYSE;-0.5;1;-0.5
+RKLB|Industrials|Aerospace and Defense|NASDAQ;RKLB;Industrials|Aerospace and Defense|NASDAQ;0.4;1;0.4
+PATH|Technology|Software|NYSE;PATH;Technology|Software|NYSE;1;1;1
+QBTS|Technology|Quantum Computing|NYSE;QBTS;Technology|Quantum Computing|NYSE;-1.12;1;-1.12
+MRNA|Healthcare|Biotechnology|NASDAQ;MRNA;Healthcare|Biotechnology|NASDAQ;-2.11;1;-2.11
+RHM.DE|Industrials|Aerospace and Defense|XETRA;RHM.DE;Industrials|Aerospace and Defense|XETRA;2.11;1;2.11
+ENI.MI|Energy|Oil and Gas|BIT;ENI.MI;Energy|Oil and Gas|BIT;2.53;1;2.53
+A2A.MI|Utilities|Electric Utilities|BIT;A2A.MI;Utilities|Electric Utilities|BIT;1.43;1;1.43
+BAMI.MI|Financials|Banking|BIT;BAMI.MI;Financials|Banking|BIT;-0.93;1;-0.93
+LDO.MI|Industrials|Aerospace and Defense|BIT;LDO.MI;Industrials|Aerospace and Defense|BIT;2.3;1;2.3
+NEXI.MI|Financials|Financial Services|BIT;NEXI.MI;Financials|Financial Services|BIT;-2.55;1;-2.55
+ELE.MC|Utilities|Electric Utilities|BME;ELE.MC;Utilities|Electric Utilities|BME;1.85;1;1.85
+IFX.DE|Technology|Semiconductors|XETRA;IFX.DE;Technology|Semiconductors|XETRA;-1.62;1;-1.62
+FCT.MI|Industrials|Shipbuilding|BIT;FCT.MI;Industrials|Shipbuilding|BIT;0.08;1;0.08
+PST.MI|Financials|Postal Services and Financials|BIT;PST.MI;Financials|Postal Services and Financials|BIT;0.47;1;0.47
+RACE.MI|Consumer Cyclical|Auto Manufacturers|BIT;RACE.MI;Consumer Cyclical|Auto Manufacturers|BIT;-1.56;1;-1.56
+ENR.DE|Industrials|Energy Equipment and Services|XETRA;ENR.DE;Industrials|Energy Equipment and Services|XETRA;-0.73;1;-0.73
+CBK.DE|Financials|Banking|XETRA;CBK.DE;Financials|Banking|XETRA;-3.1;1;-3.1
+MS|Financials|Investment Banking|NYSE;MS;Financials|Investment Banking|NYSE;-1.31;1;-1.31
+RBI|Financials|Banks|VIENNA;RBI;Financials|Banks|VIENNA;0;1;0
+INTC|Technology|Semiconductors|NASDAQ;INTC;Technology|Semiconductors|NASDAQ;-2;1;-2
+MCHI|Financial|ETF|NASDAQ;MCHI;Financial|ETF|NASDAQ;-2.2;1;-2.2
+SREN|Financial Services|Insurance|SIX;SREN;Financial Services|Insurance|SIX;0;1;0
+IONQ|Technology|Quantum Computing|NYSE;IONQ;Technology|Quantum Computing|NYSE;-0.91;1;-0.91
+BMPS.MI|Financials|Banking|BIT;BMPS.MI;Financials|Banking|BIT;-1.85;1;-1.85
+SMCI|Technology|Computer Hardware|NASDAQ;SMCI;Technology|Computer Hardware|NASDAQ;-2.03;1;-2.03
+MSFT|Technology|Software|NASDAQ;MSFT;Technology|Software|NASDAQ;-1.82;1;-1.82
+AZM.MI|Financials|Asset Management|BIT;AZM.MI;Financials|Asset Management|BIT;-2.29;1;-2.29
+AMZN|Consumer Discretionary|E-commerce|NASDAQ;AMZN;Consumer Discretionary|E-commerce|NASDAQ;-1.06;1;-1.06
+SPCX|Industrials|Aerospace and Defense|NASDAQ;SPCX;Industrials|Aerospace and Defense|NASDAQ;-5.43;1;-5.43
+LUNR|Industrials|Space and Satellite Technology|NASDAQ;LUNR;Industrials|Space and Satellite Technology|NASDAQ;0.6;1;0.6
+STLAM.MI|Consumer Cyclical|Auto Manufacturers|BIT;STLAM.MI;Consumer Cyclical|Auto Manufacturers|BIT;-3.12;1;-3.12
+G.MI|Financials|Insurance|BIT;G.MI;Financials|Insurance|BIT;0.38;1;0.38

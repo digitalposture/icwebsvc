@@ -6,6 +6,8 @@ const { buildTickerResponse } = require('./lib/tickers');
 const { buildTickersIndexResponse } = require('./lib/tickers_index');
 const { buildDetailsResponse } = require('./lib/details');
 const { buildCertsGrowthResponse } = require('./lib/certs_growth');
+const { buildSunburstResponse } = require('./lib/sunburst');
+const { loadCsvContent } = require('./lib/csv');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -24,6 +26,7 @@ const TICKERS_CSV_PATH = path.join(__dirname, 'data', 'tickers.csv');
 const TICKERS_INDEX_CSV_PATH = path.join(__dirname, 'data', 'tickers_index.csv');
 const DETAILS_CSV_PATH = path.join(__dirname, 'data', 'details.csv');
 const CERTS_GROWTH_CSV_PATH = path.join(__dirname, 'data', 'certs_growth.csv');
+const SUNBURST_ROOT_PATH = path.join(__dirname, 'data', 'sunburst');
 
 app.use(express.json());
 
@@ -110,6 +113,33 @@ app.get('/certs_growth', (req, res) => {
   const rows = buildCertsGrowthResponse(CERTS_GROWTH_CSV_PATH, {
     growth1d: req.query.growth1d,
     parvalue: req.query.parvalue
+  });
+  res.json(rows);
+});
+
+app.get(['/sunburst', '/sunburst/latest/:exchange', '/sunburst/:datetime/:exchange'], (req, res) => {
+  const requestedDatetime = req.params.datetime || '';
+  const exchange = req.params.exchange || '';
+  const sunburstEntries = fs.existsSync(SUNBURST_ROOT_PATH)
+    ? fs.readdirSync(SUNBURST_ROOT_PATH, { withFileTypes: true })
+        .filter((entry) => entry.isDirectory())
+        .map((entry) => entry.name)
+        .sort()
+        .map((entryDatetime) => {
+          const fileName = exchange === '*' || exchange === ''
+            ? 'ALL.csv'
+            : `${exchange}.csv`;
+          return {
+            datetime: entryDatetime,
+            csvContent: loadCsvContent(path.join(SUNBURST_ROOT_PATH, entryDatetime, fileName))
+          };
+        })
+    : [];
+  const datetime = requestedDatetime === 'latest' || requestedDatetime === '' && req.path.startsWith('/sunburst/latest')
+    ? (sunburstEntries[sunburstEntries.length - 1]?.datetime || '')
+    : requestedDatetime;
+  const rows = buildSunburstResponse(sunburstEntries, datetime, {
+    stock_list: req.query.stock_list || req.query.stockList || ''
   });
   res.json(rows);
 });

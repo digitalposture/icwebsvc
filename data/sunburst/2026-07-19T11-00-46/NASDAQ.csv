@@ -1,0 +1,57 @@
+ids;labels;parents;values;counts;avgs
+NASDAQ;NASDAQ;;-28.06;25;-1.12
+Space and Satellite Technology|NASDAQ;Space and Satellite Technology;NASDAQ;0.6;1;0.6
+Social Media|NASDAQ;Social Media;NASDAQ;-2.79;1;-2.79
+Telecommunications|NASDAQ;Telecommunications;NASDAQ;5.07;2;2.54
+Software-Infrastructure|NASDAQ;Software-Infrastructure;NASDAQ;-1.53;1;-1.53
+ETF|NASDAQ;ETF;NASDAQ;-2.2;1;-2.2
+Semiconductors|NASDAQ;Semiconductors;NASDAQ;-13.72;8;-1.72
+Software|NASDAQ;Software;NASDAQ;-1.3;2;-0.65
+Aerospace and Defense|NASDAQ;Aerospace and Defense;NASDAQ;-5.03;2;-2.52
+Consumer Electronics|NASDAQ;Consumer Electronics;NASDAQ;0.14;1;0.14
+Internet Content and Information|NASDAQ;Internet Content and Information;NASDAQ;-2.17;1;-2.17
+Computer Hardware|NASDAQ;Computer Hardware;NASDAQ;-2.03;1;-2.03
+Biotechnology|NASDAQ;Biotechnology;NASDAQ;-2.11;1;-2.11
+E-commerce|NASDAQ;E-commerce;NASDAQ;-1.06;2;-0.53
+Quantum Computing|NASDAQ;Quantum Computing;NASDAQ;0.07;1;0.07
+Technology|Semiconductors|NASDAQ;Technology;Semiconductors|NASDAQ;-13.72;7;-1.96
+Communication Services|Telecommunications|NASDAQ;Communication Services;Telecommunications|NASDAQ;5.07;2;2.54
+Communication Services|Internet Content and Information|NASDAQ;Communication Services;Internet Content and Information|NASDAQ;-2.17;1;-2.17
+Information Technology|Software|NASDAQ;Information Technology;Software|NASDAQ;0.52;1;0.52
+Consumer Discretionary|E-commerce|NASDAQ;Consumer Discretionary;E-commerce|NASDAQ;-1.06;2;-0.53
+Financial|ETF|NASDAQ;Financial;ETF|NASDAQ;-2.2;1;-2.2
+Technology|Consumer Electronics|NASDAQ;Technology;Consumer Electronics|NASDAQ;0.14;1;0.14
+Industrials|Aerospace and Defense|NASDAQ;Industrials;Aerospace and Defense|NASDAQ;-5.03;2;-2.52
+Technology|Computer Hardware|NASDAQ;Technology;Computer Hardware|NASDAQ;-2.03;1;-2.03
+Technology|Software|NASDAQ;Technology;Software|NASDAQ;-1.82;1;-1.82
+Industrials|Space and Satellite Technology|NASDAQ;Industrials;Space and Satellite Technology|NASDAQ;0.6;1;0.6
+Communication Services|Social Media|NASDAQ;Communication Services;Social Media|NASDAQ;-2.79;1;-2.79
+Technology|Software-Infrastructure|NASDAQ;Technology;Software-Infrastructure|NASDAQ;-1.53;1;-1.53
+Information Technology|Semiconductors|NASDAQ;Information Technology;Semiconductors|NASDAQ;0;1;0
+Technology|Quantum Computing|NASDAQ;Technology;Quantum Computing|NASDAQ;0.07;1;0.07
+Healthcare|Biotechnology|NASDAQ;Healthcare;Biotechnology|NASDAQ;-2.11;1;-2.11
+PLTR|Technology|Software-Infrastructure|NASDAQ;PLTR;Technology|Software-Infrastructure|NASDAQ;-1.53;1;-1.53
+AMD|Technology|Semiconductors|NASDAQ;AMD;Technology|Semiconductors|NASDAQ;-1.03;1;-1.03
+GOOGL|Communication Services|Internet Content and Information|NASDAQ;GOOGL;Communication Services|Internet Content and Information|NASDAQ;-2.17;1;-2.17
+META|Communication Services|Social Media|NASDAQ;META;Communication Services|Social Media|NASDAQ;-2.79;1;-2.79
+AAPL|Technology|Consumer Electronics|NASDAQ;AAPL;Technology|Consumer Electronics|NASDAQ;0.14;1;0.14
+RGTI|Technology|Quantum Computing|NASDAQ;RGTI;Technology|Quantum Computing|NASDAQ;0.07;1;0.07
+NASDAQ|Information Technology|Semiconductors|NASDAQ;NASDAQ;Information Technology|Semiconductors|NASDAQ;0;1;0
+AVGO|Technology|Semiconductors|NASDAQ;AVGO;Technology|Semiconductors|NASDAQ;-0.97;1;-0.97
+SNDK|Technology|Semiconductors|NASDAQ;SNDK;Technology|Semiconductors|NASDAQ;-3.99;1;-3.99
+FTNT|Information Technology|Software|NASDAQ;FTNT;Information Technology|Software|NASDAQ;0.52;1;0.52
+SATS|Communication Services|Telecommunications|NASDAQ;SATS;Communication Services|Telecommunications|NASDAQ;0;1;0
+NVDA|Technology|Semiconductors|NASDAQ;NVDA;Technology|Semiconductors|NASDAQ;-2.21;1;-2.21
+KLAC|Technology|Semiconductors|NASDAQ;KLAC;Technology|Semiconductors|NASDAQ;-3.02;1;-3.02
+ASTS|Communication Services|Telecommunications|NASDAQ;ASTS;Communication Services|Telecommunications|NASDAQ;5.07;1;5.07
+NASDAQ|Consumer Discretionary|E-commerce|NASDAQ;NASDAQ;Consumer Discretionary|E-commerce|NASDAQ;0;1;0
+MU|Technology|Semiconductors|NASDAQ;MU;Technology|Semiconductors|NASDAQ;-0.5;1;-0.5
+RKLB|Industrials|Aerospace and Defense|NASDAQ;RKLB;Industrials|Aerospace and Defense|NASDAQ;0.4;1;0.4
+MRNA|Healthcare|Biotechnology|NASDAQ;MRNA;Healthcare|Biotechnology|NASDAQ;-2.11;1;-2.11
+INTC|Technology|Semiconductors|NASDAQ;INTC;Technology|Semiconductors|NASDAQ;-2;1;-2
+MCHI|Financial|ETF|NASDAQ;MCHI;Financial|ETF|NASDAQ;-2.2;1;-2.2
+SMCI|Technology|Computer Hardware|NASDAQ;SMCI;Technology|Computer Hardware|NASDAQ;-2.03;1;-2.03
+MSFT|Technology|Software|NASDAQ;MSFT;Technology|Software|NASDAQ;-1.82;1;-1.82
+AMZN|Consumer Discretionary|E-commerce|NASDAQ;AMZN;Consumer Discretionary|E-commerce|NASDAQ;-1.06;1;-1.06
+SPCX|Industrials|Aerospace and Defense|NASDAQ;SPCX;Industrials|Aerospace and Defense|NASDAQ;-5.43;1;-5.43
+LUNR|Industrials|Space and Satellite Technology|NASDAQ;LUNR;Industrials|Space and Satellite Technology|NASDAQ;0.6;1;0.6

@@ -1,0 +1,61 @@
+ids;labels;parents;values;counts;avgs
+NYSE;NYSE;;0.64;24;0.03
+Space and Satellite Technology|NYSE;Space and Satellite Technology;NYSE;1.72;1;1.72
+Aerospace and Defense|NYSE;Aerospace and Defense;NYSE;-0.14;1;-0.14
+Household and Personal Products|NYSE;Household and Personal Products;NYSE;-1.16;1;-1.16
+Travel and Leisure|NYSE;Travel and Leisure;NYSE;-2.38;1;-2.38
+Exchange Traded Funds|NYSE;Exchange Traded Funds;NYSE;1.72;2;0.86
+Gold Mining|NYSE;Gold Mining;NYSE;0.54;1;0.54
+Quantum Computing|NYSE;Quantum Computing;NYSE;-2.03;2;-1.01
+ETF|NYSE;ETF;NYSE;-0.5;1;-0.5
+Computer Hardware|NYSE;Computer Hardware;NYSE;1.27;1;1.27
+Electronic Equipment Instruments and Components|NYSE;Electronic Equipment Instruments and Components;NYSE;0.23;1;0.23
+Banking|NYSE;Banking;NYSE;-0.6;1;-0.6
+ETF-Emerging Markets Equity|NYSE;ETF-Emerging Markets Equity;NYSE;-0.28;1;-0.28
+Pharmaceuticals|NYSE;Pharmaceuticals;NYSE;0.39;3;0.13
+Investment Banking|NYSE;Investment Banking;NYSE;-4.07;2;-2.04
+Oil and Gas Exploration and Production|NYSE;Oil and Gas Exploration and Production;NYSE;2.26;1;2.26
+Oil and Gas Integrated|NYSE;Oil and Gas Integrated;NYSE;1.91;1;1.91
+Software|NYSE;Software;NYSE;1.76;3;0.59
+Technology|Software|NYSE;Technology;Software|NYSE;2.77;2;1.39
+Financial Services|Exchange Traded Funds|NYSE;Financial Services;Exchange Traded Funds|NYSE;1.72;2;0.86
+Financials|ETF-Emerging Markets Equity|NYSE;Financials;ETF-Emerging Markets Equity|NYSE;-0.28;1;-0.28
+Energy|Oil and Gas Integrated|NYSE;Energy;Oil and Gas Integrated|NYSE;1.91;1;1.91
+Financials|Investment Banking|NYSE;Financials;Investment Banking|NYSE;-4.07;2;-2.04
+Industrials|Aerospace and Defense|NYSE;Industrials;Aerospace and Defense|NYSE;-0.14;1;-0.14
+Technology|Quantum Computing|NYSE;Technology;Quantum Computing|NYSE;-2.03;2;-1.01
+Technology|Space and Satellite Technology|NYSE;Technology;Space and Satellite Technology|NYSE;1.72;1;1.72
+Healthcare|Pharmaceuticals|NYSE;Healthcare;Pharmaceuticals|NYSE;0.39;3;0.13
+Basic Materials|Gold Mining|NYSE;Basic Materials;Gold Mining|NYSE;0.54;1;0.54
+Financial|ETF|NYSE;Financial;ETF|NYSE;-0.5;1;-0.5
+Energy|Oil and Gas Exploration and Production|NYSE;Energy;Oil and Gas Exploration and Production|NYSE;2.26;1;2.26
+Consumer Cyclical|Travel and Leisure|NYSE;Consumer Cyclical;Travel and Leisure|NYSE;-2.38;1;-2.38
+Consumer Defensive|Household and Personal Products|NYSE;Consumer Defensive;Household and Personal Products|NYSE;-1.16;1;-1.16
+Financials|Banking|NYSE;Financials;Banking|NYSE;-0.6;1;-0.6
+Technology|Computer Hardware|NYSE;Technology;Computer Hardware|NYSE;1.27;1;1.27
+Information Technology|Electronic Equipment Instruments and Components|NYSE;Information Technology;Electronic Equipment Instruments and Components|NYSE;0.23;1;0.23
+Information Technology|Software|NYSE;Information Technology;Software|NYSE;-1.01;1;-1.01
+AI|Information Technology|Software|NYSE;AI;Information Technology|Software|NYSE;-1.01;1;-1.01
+LLY|Healthcare|Pharmaceuticals|NYSE;LLY;Healthcare|Pharmaceuticals|NYSE;0.85;1;0.85
+GLD|Financial Services|Exchange Traded Funds|NYSE;GLD;Financial Services|Exchange Traded Funds|NYSE;0.95;1;0.95
+EWZ|Financials|ETF-Emerging Markets Equity|NYSE;EWZ;Financials|ETF-Emerging Markets Equity|NYSE;-0.28;1;-0.28
+PL|Technology|Space and Satellite Technology|NYSE;PL;Technology|Space and Satellite Technology|NYSE;1.72;1;1.72
+OXY|Energy|Oil and Gas Exploration and Production|NYSE;OXY;Energy|Oil and Gas Exploration and Production|NYSE;2.26;1;2.26
+CL|Consumer Defensive|Household and Personal Products|NYSE;CL;Consumer Defensive|Household and Personal Products|NYSE;-1.16;1;-1.16
+GS|Financials|Investment Banking|NYSE;GS;Financials|Investment Banking|NYSE;-2.76;1;-2.76
+COHR|Information Technology|Electronic Equipment Instruments and Components|NYSE;COHR;Information Technology|Electronic Equipment Instruments and Components|NYSE;0.23;1;0.23
+DELL|Technology|Computer Hardware|NYSE;DELL;Technology|Computer Hardware|NYSE;1.27;1;1.27
+CVX|Energy|Oil and Gas Integrated|NYSE;CVX;Energy|Oil and Gas Integrated|NYSE;1.91;1;1.91
+PFE|Healthcare|Pharmaceuticals|NYSE;PFE;Healthcare|Pharmaceuticals|NYSE;-0.36;1;-0.36
+BA|Industrials|Aerospace and Defense|NYSE;BA;Industrials|Aerospace and Defense|NYSE;-0.14;1;-0.14
+SLV|Financial Services|Exchange Traded Funds|NYSE;SLV;Financial Services|Exchange Traded Funds|NYSE;0.77;1;0.77
+AU|Basic Materials|Gold Mining|NYSE;AU;Basic Materials|Gold Mining|NYSE;0.54;1;0.54
+MRK|Healthcare|Pharmaceuticals|NYSE;MRK;Healthcare|Pharmaceuticals|NYSE;-0.1;1;-0.1
+ORCL|Technology|Software|NYSE;ORCL;Technology|Software|NYSE;1.77;1;1.77
+JPM|Financials|Banking|NYSE;JPM;Financials|Banking|NYSE;-0.6;1;-0.6
+RCL|Consumer Cyclical|Travel and Leisure|NYSE;RCL;Consumer Cyclical|Travel and Leisure|NYSE;-2.38;1;-2.38
+EWY|Financial|ETF|NYSE;EWY;Financial|ETF|NYSE;-0.5;1;-0.5
+PATH|Technology|Software|NYSE;PATH;Technology|Software|NYSE;1;1;1
+QBTS|Technology|Quantum Computing|NYSE;QBTS;Technology|Quantum Computing|NYSE;-1.12;1;-1.12
+MS|Financials|Investment Banking|NYSE;MS;Financials|Investment Banking|NYSE;-1.31;1;-1.31
+IONQ|Technology|Quantum Computing|NYSE;IONQ;Technology|Quantum Computing|NYSE;-0.91;1;-0.91

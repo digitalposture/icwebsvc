@@ -3,6 +3,7 @@ const { buildTickerResponse } = require('../lib/tickers');
 const { buildTickersIndexResponse } = require('../lib/tickers_index');
 const { buildDetailsResponse } = require('../lib/details');
 const { buildCertsGrowthResponse } = require('../lib/certs_growth');
+const { buildSunburstResponse } = require('../lib/sunburst');
 
 import { env } from "cloudflare:workers";
 
@@ -122,6 +123,25 @@ export default {
       const rows = buildCertsGrowthResponse(csvContent, {
         growth1d: url.searchParams.get('growth1d'),
         parvalue: url.searchParams.get('parvalue')
+      });
+      return jsonResponse(rows);
+    }
+
+    if (segments[0] === 'sunburst') {
+      const requestedDatetime = segments[1] || '';
+      const exchange = segments[2] || '';
+      const fileName = exchange === '*' || exchange === '' ? 'ALL.csv' : `${exchange}.csv`;
+      const datetime = requestedDatetime === 'latest'
+        ? ''
+        : requestedDatetime;
+      const csvContent = await getR2CsvContent(env, `sunburst/${datetime}/${fileName}`);
+      const rows = buildSunburstResponse([
+        {
+          datetime: requestedDatetime === 'latest' ? '' : requestedDatetime,
+          csvContent
+        }
+      ], datetime === '' ? 'latest' : datetime, {
+        stock_list: url.searchParams.get('stock_list') || url.searchParams.get('stockList') || ''
       });
       return jsonResponse(rows);
     }
