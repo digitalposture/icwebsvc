@@ -8,6 +8,7 @@ const { buildDetailsResponse } = require('./lib/details');
 const { buildCertsGrowthResponse } = require('./lib/certs_growth');
 const { buildSunburstResponse } = require('./lib/sunburst');
 const { loadCsvContent } = require('./lib/csv');
+const { capValue } = require('./lib/utils');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -121,12 +122,13 @@ app.get(['/sunburst', '/sunburst/latest/:exchange', '/sunburst/:datetime/:exchan
   const requestedDatetime = req.params.datetime || '';
   const exchange = req.params.exchange || '';
   const isLatest =  req.path.startsWith('/sunburst/latest');
+  const topN = capValue(req.query.topn, 5, 10);
   // console.log('Requested sunburst datetime:', requestedDatetime, 'exchange:', exchange, 'isLatest:', isLatest);
   const sunburstEntries = fs.existsSync(SUNBURST_ROOT_PATH)
       ? fs.readdirSync(SUNBURST_ROOT_PATH, { withFileTypes: true })
           .filter((entry) => entry.isDirectory())
           .map((entry) => entry.name)
-          .sort()
+          .sort((a, b) => b.localeCompare(a)).slice(0, topN)
       : [];
   if ( (requestedDatetime === '' && !isLatest) || sunburstEntries.length === 0 ) return res.json(sunburstEntries);
   const datetime = isLatest? sunburstEntries[sunburstEntries.length - 1] : requestedDatetime;

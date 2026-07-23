@@ -4,6 +4,7 @@ const { buildTickersIndexResponse } = require('../lib/tickers_index');
 const { buildDetailsResponse } = require('../lib/details');
 const { buildCertsGrowthResponse } = require('../lib/certs_growth');
 const { buildSunburstResponse } = require('../lib/sunburst');
+const { capValue } = require('../lib/utils');
 
 import { env } from "cloudflare:workers";
 
@@ -79,7 +80,7 @@ export default {
       return object ? await object.text() : '';
     }
 
-    async function getFolders(env) {
+    async function getFolders(env, topN = 5) {
       if (!env?.RWS) return [];
 
       const prefix = `${R2_DATA_PREFIX}sunburst/`;
@@ -97,7 +98,7 @@ export default {
         return parts[2];  // "2026-07-19T15-00-46"
       });
 
-      return folders.sort(); // ISO timestamps sort correctly
+      return folders.sort((a, b) => b.localeCompare(a)).slice(0, topN); // ISO timestamps sort descending
     }
 
 
@@ -152,7 +153,8 @@ export default {
     if (segments[0] === 'sunburst') {
       const requestedDatetime = segments[1] || '';
       const exchange = segments[2] || '';
-      const sunburstEntries = await getFolders(env);
+      const topN = capValue(url.searchParams.get('topn'), 5, 10);
+      const sunburstEntries = await getFolders(env, topN);
       console.log('Requested sunburst datetime:', requestedDatetime, 'exchange:', exchange, 'available datetimes:', sunburstEntries);
       if (requestedDatetime === '' || sunburstEntries.length === 0) {
         return jsonResponse(sunburstEntries);
