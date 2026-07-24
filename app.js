@@ -122,7 +122,7 @@ app.get(['/sunburst', '/sunburst/latest/:exchange', '/sunburst/:datetime/:exchan
   const requestedDatetime = req.params.datetime || '';
   const exchange = req.params.exchange || '';
   const isLatest =  req.path.startsWith('/sunburst/latest');
-  const topN = capValue(req.query.topn, 5, 10);
+  const topN = capValue(req.query.topn, 15, 30);
   // console.log('Requested sunburst datetime:', requestedDatetime, 'exchange:', exchange, 'isLatest:', isLatest);
   const sunburstEntries = fs.existsSync(SUNBURST_ROOT_PATH)
       ? fs.readdirSync(SUNBURST_ROOT_PATH, { withFileTypes: true })

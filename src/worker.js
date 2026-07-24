@@ -153,7 +153,7 @@ export default {
     if (segments[0] === 'sunburst') {
       const requestedDatetime = segments[1] || '';
       const exchange = segments[2] || '';
-      const topN = capValue(url.searchParams.get('topn'), 5, 10);
+      const topN = capValue(url.searchParams.get('topn'), 15, 30);
       const sunburstEntries = await getFolders(env, topN);
       console.log('Requested sunburst datetime:', requestedDatetime, 'exchange:', exchange, 'available datetimes:', sunburstEntries);
       if (requestedDatetime === '' || sunburstEntries.length === 0) {
