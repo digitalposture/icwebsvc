@@ -131,7 +131,7 @@ app.get(['/sunburst', '/sunburst/latest/:exchange', '/sunburst/:datetime/:exchan
           .sort((a, b) => b.localeCompare(a)).slice(0, topN)
       : [];
   if ( (requestedDatetime === '' && !isLatest) || sunburstEntries.length === 0 ) return res.json(sunburstEntries);
-  const datetime = isLatest? sunburstEntries[sunburstEntries.length - 1] : requestedDatetime;
+  const datetime = isLatest? sunburstEntries[0] : requestedDatetime;
   
   if (!sunburstEntries.includes(datetime)) return res.json([]);
 

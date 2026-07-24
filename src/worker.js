@@ -160,7 +160,7 @@ export default {
         return jsonResponse(sunburstEntries);
       }
       const datetime = requestedDatetime === 'latest'
-        ? sunburstEntries[sunburstEntries.length - 1]
+        ? sunburstEntries[0]
         : requestedDatetime;
       if (!sunburstEntries.includes(datetime)) return jsonResponse([]);
       const fileName = exchange === '*' || exchange === '' ? 'ALL.csv' : `${exchange}.csv`;
